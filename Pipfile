@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 dbt-snowflake = "*"
 great-expectations = "*"
+sqlalchemy = "*"
+snowflake-sqlalchemy = "*"
 
 [dev-packages]
 black = "*"
