@@ -1,0 +1,59 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "yellow_cab_raw.csv.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "Unnamed: 0",
+          "VendorID",
+          "tpep_pickup_datetime",
+          "tpep_dropoff_datetime",
+          "passenger_count",
+          "trip_distance",
+          "RatecodeID",
+          "store_and_fwd_flag",
+          "PULocationID",
+          "DOLocationID",
+          "payment_type",
+          "fare_amount",
+          "extra",
+          "mta_tax",
+          "tip_amount",
+          "tolls_amount",
+          "improvement_surcharge",
+          "total_amount",
+          "congestion_surcharge",
+          "airport_fee"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "passenger_count",
+        "max_value": 6,
+        "min_value": 0
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "yellow_cab_raw.csv",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "dbt_seeds",
+          "limit": 1000
+        },
+        "citation_date": "2022-09-02T19:32:41.981516Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.15.21"
+  }
+}
