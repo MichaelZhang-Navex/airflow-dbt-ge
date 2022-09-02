@@ -1,0 +1,13 @@
+mzsnowflake:
+  outputs:
+    dev:
+      account: lta88484
+      database: RAW
+      password: Welcome2Tianma!
+      role: ACCOUNTADMIN
+      schema: PUBLIC
+      threads: 1
+      type: snowflake
+      user: zhang1605
+      warehouse: COMPUTE_WH
+  target: dev
