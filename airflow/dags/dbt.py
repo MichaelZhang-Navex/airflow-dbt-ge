@@ -6,9 +6,9 @@ from airflow_dbt.operators.dbt_operator import (
 from airflow.utils.dates import days_ago
 
 default_args = {
-  'dir': '../dbt',
+  'dir': './dbt',
   'start_date': days_ago(0),
-  'profiles_dir': '../dbt'
+  'profiles_dir': './dbt'
 }
 
 
