@@ -1,5 +1,10 @@
 # initial launch
 
+## build own image with extra package
+
+```bash
+docker build . -f Dockerfile --pull --tag my-image:0.0.1
+```
 
 ## basic launch
 
@@ -11,12 +16,12 @@ docker-compose up airflow-init
 docker-compose up -d
 ```
 
-Then pug dags in ./dags
+Then put dags in ./dags
 
 
 ## enable encryption
 
-you can generate the key anywhere and put it in the docker-compose.yml
+I have put a key in file, but you can generate the key anywhere and put it in the docker-compose.yml
 
 ```bash
 pip install cryptography
